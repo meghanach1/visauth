@@ -1,0 +1,36 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-visauth-dev-223933-authRole",
+      "UnauthRoleArn": "arn:aws:iam::533267180829:role/amplify-visauth-dev-223933-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::533267180829:role/amplify-visauth-dev-223933-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-visauth-dev-223933-deployment",
+      "UnauthRoleName": "amplify-visauth-dev-223933-unauthRole",
+      "StackName": "amplify-visauth-dev-223933",
+      "StackId": "arn:aws:cloudformation:us-east-1:533267180829:stack/amplify-visauth-dev-223933/a1435350-ebeb-11ee-ba96-0e83175eaacb",
+      "AmplifyAppId": "d27617jc3yauag"
+    },
+    "categories": {
+      "function": {
+        "visaauthlambda": {
+          "deploymentBucketName": "amplify-visauth-dev-223933-deployment",
+          "s3Key": "amplify-builds/visaauthlambda-4e543776656d5277314a-build.zip"
+        }
+      },
+      "hosting": {
+        "amplifyhosting": {
+          "appId": "d27617jc3yauag",
+          "type": "manual"
+        }
+      },
+      "api": {
+        "visaauthrest": {},
+        "visauthresource": {}
+      },
+      "auth": {
+        "visautha9a8b2c4": {}
+      }
+    }
+  }
+}

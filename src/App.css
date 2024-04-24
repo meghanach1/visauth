@@ -1,38 +1,158 @@
 .App {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: url('/Users/Megha/Desktop/Spring 2024/Cloud Computing/visitor_auth/visauth/src/visitors/main.png');
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.App::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(255, 255, 255, 0.33);
+  z-index: 1;
+}
+
+.Header {
+  display: flex;
+  justify-content: center; /* Center items horizontally */
+  align-items: center; 
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #232f3e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.aws-logo {
+  height: 60px;  /* Adjust the height as needed */
+  width: auto;   /* Maintain aspect ratio */
+  margin-right: 10px; /* Space between logo and header text */
+}
+
+.form-container {
+  position: relative;
+  z-index: 2;
   text-align: center;
+  background-color: rgba(142, 142, 142, 0.8);
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.form-input {
+  margin-bottom: 20px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 300px;
+}
+
+.button:hover {
+  background-color: #d62344;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button.secondary {
+  background-color: #333;
+}
+
+.button.secondary:hover {
+  background-color: #555;
+}
+
+.button.large {
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  color: #fff;
+  text-align: center;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #232f3e;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.footer p {
+  margin: 0;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.footer a:hover {
+  text-decoration: none;
+}
+
+.success,
+.failure {
+  padding: 1rem;
+  margin-top: 30px;
+  margin-left: 350px;
+  margin-bottom: 75px;
+  color: #fff;
+  font-family: 'Arial', sans-serif;
+  font-size: 1.2rem;
+  text-align: center;
+  width: 50%;
+}
+
+.success {
+  background-color: rgba(44, 247, 47, 0.8);
+}
+
+.failure {
+  background-color: rgba(255, 25, 0, 0.7);
+}
+
+
+
+.sign-out-button {
+  margin-left: 20px; /* Add some margin for spacing */
+  padding: 10px 20px;
+  background-color: #f44336; /* Red color */
   color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.sign-out-button:hover {
+  background-color: #d32f2f; /* Darker red color on hover */
 }

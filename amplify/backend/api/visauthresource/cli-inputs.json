@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/image": {
+      "name": "/image",
+      "lambdaFunction": "visaauthlambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}

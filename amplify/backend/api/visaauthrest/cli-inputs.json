@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "paths": {
+    "/imagerecognition": {
+      "name": "/imagerecognition",
+      "lambdaFunction": "visaauthlambda",
+      "permissions": {
+        "setting": "open"
+      }
+    }
+  }
+}
